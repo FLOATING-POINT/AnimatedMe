@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="animatedMe" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons\;src\;" />
+		<Build>
+			<Target title="release">
+				<Option output="bin\$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\release" />
+				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworks.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib" />
+				</Linker>
+			</Target>
+			<Target title="debug">
+				<Option output="bin\$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj\debug\" />
+				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworksDebug.lib;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="..\..\..\addons\ofxMSKinect\src" />
+					<Add directory="$(MSRKINECTSDK)\lib" />
+					<Add directory="$(LibraryPath);" />
+					<Add directory="$(FrameworkSDKDir)\include;" />
+					<Add directory="$(MSRKINECTSDK)\inc" />
+				</Compiler>
+				<Linker>
+					<Add option="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib" />
+					<Add library="C:\Program Files (x86)\Microsoft Research KinectSDK\lib\MSRKinectNUI.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wno-multichar" />
+			<Add directory="..\..\..\libs\glu\include" />
+			<Add directory="..\..\..\libs\freetype\include" />
+			<Add directory="..\..\..\libs\freetype\include\freetype2" />
+			<Add directory="..\..\..\libs\FreeImage\include" />
+			<Add directory="..\..\..\libs\quicktime\include" />
+			<Add directory="..\..\..\libs\rtAudio\include" />
+			<Add directory="..\..\..\libs\fmodex\include" />
+			<Add directory="..\..\..\libs\videoInput\include" />
+			<Add directory="..\..\..\libs\glew\include" />
+			<Add directory="..\..\..\libs\glut\include" />
+			<Add directory="..\..\..\libs\openFrameworks" />
+			<Add directory="..\..\..\libs\openFrameworks\3d" />
+			<Add directory="..\..\..\libs\openFrameworks\app" />
+			<Add directory="..\..\..\libs\openFrameworks\communication" />
+			<Add directory="..\..\..\libs\openFrameworks\events" />
+			<Add directory="..\..\..\libs\openFrameworks\gl" />
+			<Add directory="..\..\..\libs\openFrameworks\graphics" />
+			<Add directory="..\..\..\libs\openFrameworks\math" />
+			<Add directory="..\..\..\libs\openFrameworks\sound" />
+			<Add directory="..\..\..\libs\openFrameworks\types" />
+			<Add directory="..\..\..\libs\openFrameworks\utils" />
+			<Add directory="..\..\..\libs\openFrameworks\video" />
+			<Add directory="..\..\..\libs\poco\include" />
+			<Add directory="..\..\..\libs\tess2\include" />
+			<Add directory="..\..\..\libs\cairo\include\cairo" />
+			<Add directory="src" />
+			<Add directory="..\..\..\addons_nonCore\ofxDelaunay\libs\Delaunay" />
+			<Add directory="..\..\..\addons_nonCore\ofxDelaunay\src" />
+			<Add directory="..\..\..\addons_nonCore\ofxMSKinectSkelDataReader\src" />
+			<Add directory="..\..\..\addons_nonCore\ofxMSKinect\src" />
+			<Add directory="..\..\..\addons_nonCore\MSKinectWrapper\src" />
+			<Add directory="..\..\..\addons_nonCore\ofxSimpleGuiToo\src" />
+			<Add directory="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls" />
+			<Add directory="..\..\..\addons\ofxXmlSettings\libs" />
+			<Add directory="..\..\..\addons\ofxXmlSettings\src" />
+			<Add directory="..\..\..\addons_nonCore\ofxMSAInteractiveObject\src" />
+			<Add directory="..\..\..\addons_nonCore\ofxTextSuite\src" />
+			<Add directory="..\..\..\addons_nonCore\ofxImage\src" />
+		</Compiler>
+		<Linker>
+			<Add library="..\..\..\libs\FreeImage\lib\win_cb\FreeImage.lib" />
+			<Add library="..\..\..\libs\rtAudio\lib\win_cb\librtaudio.a" />
+			<Add library="..\..\..\libs\quicktime\lib\win_cb\qtmlClient.lib" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libcairo.a" />
+			<Add library="..\..\..\libs\cairo\lib\win_cb\libpixman-1.a" />
+			<Add library="..\..\..\libs\freetype\lib\win_cb\libfreetype.a" />
+			<Add library="..\..\..\libs\glut\lib\win_cb\libglut.a" />
+			<Add library="..\..\..\libs\videoInput\lib\win_cb\videoInputLib.a" />
+			<Add library="..\..\..\libs\fmodex\lib\win_cb\libfmodex.a" />
+			<Add library="..\..\..\libs\glew\lib\win_cb\glew32s.lib" />
+			<Add library="..\..\..\libs\glu\lib\win_cb\glu32.lib" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoNet.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoUtil.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoXML.a" />
+			<Add library="..\..\..\libs\poco\lib\win_cb\libPocoFoundation.a" />
+			<Add library="..\..\..\libs\tess2\lib\win_cb\libtess2.a" />
+			<Add library="opengl32" />
+			<Add library="gdi32" />
+			<Add library="msimg32" />
+			<Add library="glu32" />
+			<Add library="dsound" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="strmbase" />
+			<Add library="strmiids" />
+			<Add library="z" />
+			<Add library="uuid" />
+			<Add library="ole32" />
+			<Add library="oleaut32" />
+			<Add library="setupapi" />
+			<Add library="wsock32" />
+			<Add library="ws2_32" />
+			<Add library="Iphlpapi" />
+			<Add library="Comdlg32" />
+		</Linker>
+		<ExtraCommands>
+			<Add after='xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;' />
+			<Add after='cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;' />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp" />
+		<Unit filename="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
+		<Unit filename="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
+		<Unit filename="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
+		<Unit filename="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
+		<Unit filename="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
+		<Unit filename="..\..\..\addons_nonCore\MSKinectWrapper\src\MSKinectWrapper.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\MSKinectWrapper\src\MSKinectWrapper.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxDelaunay\libs\Delaunay\Delaunay.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxDelaunay\libs\Delaunay\Delaunay.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxDelaunay\src\ofxDelaunay.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxDelaunay\src\ofxDelaunay.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinectSkelDataReader\src\dataContainer.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinectSkelDataReader\src\ofxMSKinectSkelDataReader.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinectSkelDataReader\src\ofxMSKinectSkelDataReader.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\MS_NUI_Def.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\MS_NUI_Kinect_Interface.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\MS_NUI_Kinect_Interface.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\MS_NUI_Kinect_SkeletonEngine.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\MS_NUI_Kinect_SkeletonEngine.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\ofxMSKinect.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\ofxMSKinect.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\ofxMSKinectDevice.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\ofxMSKinectDevice.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\ofxMSKinectSkeleton.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxMSKinect\src\ofxMSSkeletonDraw.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiButton.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiButton.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiColorPicker.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiColorPicker.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiComboBox.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiComboBox.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiContent.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiContent.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiFPSCounter.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiFPSCounter.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiMovieSlider.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiMovieSlider.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiQuadWarp.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiQuadWarp.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSlider2d.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSlider2d.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSliderBase.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSliderFloat.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSliderInt.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiTitle.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiTitle.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiToggle.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiToggle.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiConfig.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiConfig.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiControl.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiControl.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiIncludes.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiPage.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiPage.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiToo.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiToo.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiValueControl.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxSimpleGuiToo\src\ofxSimpleGuiValueControl.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxTextSuite\src\ofxTextBlock.cpp" />
+		<Unit filename="..\..\..\addons_nonCore\ofxTextSuite\src\ofxTextBlock.h" />
+		<Unit filename="..\..\..\addons_nonCore\ofxTextSuite\src\ofxTextSuite.h" />
+		<Unit filename="src\characterAssets.cpp" />
+		<Unit filename="src\characterAssets.h" />
+		<Unit filename="src\characterName.cpp" />
+		<Unit filename="src\characterName.h" />
+		<Unit filename="src\empty.cpp" />
+		<Unit filename="src\empty.h" />
+		<Unit filename="src\footerMsg.cpp" />
+		<Unit filename="src\footerMsg.h" />
+		<Unit filename="src\kinectSkelAniMesh.cpp" />
+		<Unit filename="src\kinectSkelAniMesh.h" />
+		<Unit filename="src\main.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src\ofxHandsUpMoveDetector.cpp" />
+		<Unit filename="src\ofxHandsUpMoveDetector.h" />
+		<Unit filename="src\remoteImage.cpp" />
+		<Unit filename="src\remoteImage.h" />
+		<Unit filename="src\skelAssetManager.cpp" />
+		<Unit filename="src\skelAssetManager.h" />
+		<Unit filename="src\testApp.cpp">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Unit filename="src\testApp.h">
+			<Option virtualFolder="src" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,14 @@
+<controls>
+    <SliderInt_Offset_X>
+        <name>Offset X</name>
+        <value>236</value>
+    </SliderInt_Offset_X>
+    <SliderInt_Offset_Y>
+        <name>Offset Y</name>
+        <value>316</value>
+    </SliderInt_Offset_Y>
+    <SliderFloat_kinectScale>
+        <name>kinectScale</name>
+        <value>0.630769</value>
+    </SliderFloat_kinectScale>
+</controls>
